@@ -1,0 +1,681 @@
+<style>
+
+div.strategy{
+
+	border-style: dashed;
+	background-color: #16161d;
+	color:white;
+	padding:2%;
+}
+
+
+
+
+body{
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+}
+header{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+
+}
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.head{
+    text-align: center;
+    position: relative;
+
+
+}
+
+img{ 
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+.headerobjectswrapper{
+}
+
+.subhead{
+    text-transform: uppercase;
+    border-bottom: 2px solid #2f2f2f;
+    border-top: 2px solid #2f2f2f;
+    padding: 12px 0 12px 0;
+
+}
+.weatherforcastbox{
+    position: relative;
+    width: 12%;
+    left: 10px;
+    border: 3px double #2f2f2f;
+    padding: 10px 15px 10px 15px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 50px 20px -360px;
+}
+.content{
+    font-size: 0;
+    line-height: 0;
+    word-spacing: -.31em;
+    display: inline-block;
+    margin: 30px 2% 0 2%;
+
+
+}
+.collumns{
+
+}
+
+.collumn{
+    font-size: 14px;
+    line-height: 20px;
+    width: 95%;
+    display: inline-block;
+    padding: 0 1% 0 1%;
+    vertical-align: top;
+    margin-bottom: 50px;
+    transition: all .7s;
+border-right: 1px solid #333;
+border-left: 1px solid #333;
+}
+.collumn + .collumn { 
+  border-left: 1px solid #2f2f2f;
+}
+.collumn .headline{
+    text-align: center;
+    line-height: normal;
+    font-family: 'Playfair Display', serif;
+    display: block;
+    margin: 0 auto;
+
+
+}
+.collumn .headline.hl1{
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+
+}
+
+.collumn .headline.hl2{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
+.collumn .headline.hl2:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl2:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 13px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl3{
+  
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl4:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.collumn .headline.hl5{
+    font-weight: 400;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-style: italic;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6{
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 7px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .headline.hl6:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 10px;
+    display: block;
+    margin: 0 auto;
+
+}
+.collumn .headline.hl7{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl8{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl9{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .headline.hl10{
+    font-weight: 700;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+.collumn .citation{
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 44px;
+    /*font-style: italic;*/
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    margin: 40px 0 40px 0;
+    font-feature-settings: "liga", "dlig";
+
+}
+.collumn .citation:before{
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .citation:after{
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+}
+.collumn .figure {
+	  margin: 0 0 20px;
+}
+.collumn .figcaption{
+	font-style: italic;
+	font-size: 12px;
+}
+.media {
+    -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+    filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+    mix-blend-mode: multiply;
+    width: 75%;
+}
+/*________________________________________________________________________________________________________________________________*/
+/*MEDIAQUERIES*/
+@media only all and (max-width: 1300px) {
+    .weatherforcastbox{
+        display: none;
+    }
+
+}
+@media only all and (max-width: 1200px) {
+    .collumn{
+        width: 95%;
+    }
+
+}
+    @media only all and (max-width: 900px) {
+    .collumn{
+        width: 95%;
+    }
+
+}
+@media only all and (max-width: 600px) {
+    .collumn{
+        width: 95%;
+    }
+	.collumn + .collumn {
+				border-left: none;
+      	border-bottom: 1px solid #2f2f2f;
+	}
+    header{
+        max-width: 320px;
+        font-size: 60px;
+        line-height: 54px;
+        overflow: hidden;
+    }
+
+
+}
+
+
+.navbar{
+  background: #333;
+  padding:12px;
+}
+
+.dropbtn {
+  background-color: #f9f7f1;
+  color: #333;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 110px;
+  font-weight: bold; 
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f7f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #db5e67;}
+
+
+}
+
+
+
+a {
+	text-decoration:none;
+	color: #333;
+	}
+/* unvisited link */
+a:link {
+  color: #333;
+}
+
+/* visited link */
+a:visited {
+  color: #333;
+}
+
+/* mouse over link */
+a:hover {
+  color: #333;
+}
+
+/* selected link */
+a:active {
+  color: #333;
+}
+
+
+
+
+
+	hr.line1{
+	border-top: 1px solid #8c8b8b;
+}
+	hr.line3{
+	border-right: 3px solid #8c8b8b;
+}
+
+hr.line2 {
+	border-top: 3px double #8c8b8b;
+}
+
+hr.line14 { 
+	border: 0; 
+	height: 1px; 
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+
+	
+	
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<!--===================== START =================-->
+<!--===================== This is all the stuff in the header =================-->
+<!--===================== This is all the stuff in the header =================-->
+
+
+
+
+
+
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/newspaper.css">
+
+    <title>Recreate Meaning</title>
+    <meta name="viewport" content="width=device-width">
+
+</head>
+
+
+<body>
+<div class="head">
+    <div class="headerobjectswrapper">
+        <div class="weatherforcastbox"><span style="font-style: italic;">Meaningforcast for the next 24 hours: Get Plenty of Sunshine and Drink lots of Water</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span></div>
+               <header><a href="https://aaronunify.github.io/Contracts_test_3/RecreateMeaning_homepage.html">Recreate Meaning</a></header>
+    </div>
+
+
+
+<div class ="navbar">
+
+<div class="dropdown">
+  <button class="dropbtn">Unify</button>
+  <div class="dropdown-content">
+    <a href="#">Sign In</a>
+    <a href="#">About Unify</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Contracts</button>
+  <div class="dropdown-content">
+    <a href="https://aaronunify.github.io/Contracts_test_3/Contracts_Menu">New Contract</a>
+    <a href="https://aaronunify.github.io/Contracts_test_3/Index">About Contracts</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+
+<div class="dropdown">
+  <button class="dropbtn">About</button>
+  <div class="dropdown-content">
+    <a href="#">Recreate Meaning</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Unify</a>
+    <a href="#">Contracts</a>
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--===================== END =================-->
+<!--===================== This is all the stuff in the header =================-->
+<!--===================== This is all the stuff in the header =================-->
+
+
+
+
+
+
+<!--===================== Start =================-->
+<!--===================== This is the start of the story =================-->
+<!--===================== This is the start of the story =================-->
+
+
+
+
+
+
+
+
+<hr class = "line14"><hr class = "line14">
+
+<div class="collumn">
+            <div class="head"><span class="headline hl5">The Money Problem</span><p><span class="headline hl6">The root of all evil?</span></p></div>
+
+
+			<img class="media" src="https://uploads8.wikiart.org/images/ivan-aivazovsky/american-shipping-off-the-rock-of-gibraltar-1873.jpg!Large.jpg" alt="">
+								<figcaption class="figcaption">Success against all odds. </figcaption>
+						</figure>	
+
+
+
+<br><br>
+<p>
+
+
+
+The money problem is when you're lacking the required resources to be able to make the choices that would allow for a unique path through life. Instead finding yourself following a well trodden path of financial scarcity, forced to devote a lifetime of attention and energy to the task of survival.  
+<br><br>
+There are two kinds of financial scarcity: absolute poverty and relative poverty. The difference is that those in absolute poverty cannot afford essentials such as housing, food, medicine, ect. Most Western countries have charities, government programs, and welfare available to assist those in absolute poverty. 
+<br><br>
+Relative poverty is when you cannot afford the same things as other members of your society and peer group. It can be frustrating seeing other people with an abundance of resources, while you feel like you’re working just as hard. If the people with the abundance are older, it can be reassuring that they are doing well. If they’re the same age, went to the same school, and work a similar career then it’s hard to avoid becoming envious. 
+<br><br>
+Envy signals that the other person has something you want. It’s best to acknowledge this outright when it comes to money. Money can be used to purchase a lifestyle, increased freedom, security, novelty and health. There is also plenty of it around, it’s just a matter of figuring out how to get more of it. 
+<br><br>
+Some claim that "money is the root of all evil", but like many common sayings this misquote has lost its original meaning. The complete quote is "For the love of money is the root of all evil: which while some coveted after, they have erred from the faith, and pierced themselves through with many sorrows." It's a warning that the yearning for money above all else causes suffering and it holds true for most things, not just money. 
+<br><br>
+Rather than being the root to all evil, money is a means to an end. If the reason that you want more money is to impress other people, your character lacks the depth required to impress other people. At least, the depth required to impress interesting people. 
+<br><br>
+If the reason you desire money is to fund the pursuit of a meaningful life that is beneficial to the earth and its people, you’re more likely to do something that makes you feel good and truly impresses other people. But remember, a meaningful life should be determined by your own standards, not anyone else's. 
+<br><br>
+For those that are lost as to what I mean by meaningful check out my article discussing the meaning problem here. In the meantime, the process of solving the money problem can be a source of temporary meaning if you are yet to receive your call to adventure. 
+<br><br>
+If you’re starting at zero dollars, then you get money when you earn it by generating value that people are willing to pay for. My anti-capitalist friends imagine I mean a boring job by that statement, my entrepreneur friends imagine the statement refers to customers. Whichever way you decide to take it is probably an indication of your values at this point in time. If I had to start over, (either by going back in time or just losing it all), starting at zero I would get any job (even Mcdoanld’s) and start saving. 
+<br><br>
+The reason I would take any job initially is because I think it’s much easier to make money from investments and a career is overrated. I only need to make enough money for a house deposit and to pay a mortgage or two for a few years to build some serious equity. After that point I could purchase a business of my own if it was what I wanted.  
+<br><br>
+In most economies, provided you're capable of generating value and your negotiating skills are up to date, attaining some money should be possible. To avoid the root of all evil problems, get into the habit of identifying win-win situations that allow for both parties in the transaction to benefit. Otherwise you risk failing to provide value and alienating yourself from future trade with that person. 
+<br><br>
+However you choose to pursue income, the most important thing is for your income to be greater than your expenses. Take what you can get when it comes to income, low paying jobs are better than welfare because they give you a chance to gain skills, and expand your network of contacts. If you work competently and efficiently eventually something that pays more will become available to you. Either within the organisation or outside of it. 
+<br><br>
+But when it comes to keeping your expenses less than your income, get serious. Live with your family if you can and repay them later, if that’s not possible live with your buddy. If you don’t have any buddies, rent the cheapest place possible with like-minded roommates.  
+<br><br>
+Excess income used to be used to sit in the bank and generate interest. Now it doesn’t really do that, instead the interest generated by your money doesn’t cover your losses from inflation and then it's taxed. Doesn’t sound fair right? Sounds like one big incentive to avoid saving money to me. 
+
+In fact, why not spend all your money as soon as you get it, or better, why not spend the money you haven’t earned yet? Well that’s simple, the interest on loans relating to spending money on anything fun is around 10%+. You’ll put yourself in a hole that you can’t climb out of pretty quickly doing that. 
+<br><br>
+So an amendment, why not invest money you haven’t earned yet? The interest rates for investment loans tend to be around 2% currently. Plus, you can buy income generating investments. A good investment will generate enough income to pay while appreciating in value. Buy something for 200k, it pays for itself, sell for 300k. Rinse and repeat. 
+<br><br>
+Let's talk more specifically about strategies for investing your excess income to attain the necessary wealth to fund a meaningful life. These are not foolproof, but in general they have a higher chance of success than most other strategies.The I selected a value of $1,000,000.00 has been selected arbitrarily to demonstrate the potential of these strategies. 
+<br><br>
+	
+	<div class = "strategy">
+	
+<strong>STRATEGY 1: Entrepreneurship</strong><br>
+This strategy is ideal for high-confidence, high-energy, highly adaptable people. <br><br>
+1. Attain a diploma, trade or degree* in a field of personal interest**. <br>
+2. Gain employment in the field and focus on developing competence. <br>
+3. Use your reputation to begin working for yourself once you are capable.*** <br>
+4. Once you have more work than you can handle on your own, hire and train competent employees. <br> 
+5. Keep the business alive by ensuring work remains to a high standard. <br>
+6. Once the net-profit of the business reaches $250,000.00, you should be able to sell the business for $1,000,000.00**** 
+<br><br>	</div>
+*Unless you don’t want to <br>
+**Without personal interest you will likely be outcompeted. <br>
+***Use <a href="https://aaronunify.github.io/Contracts_test_3/Contractor_Agreement">the contractor agreement</a> to make this step easier. <br>
+****Businesses tend to sell for a multiple of their earnings. Depending on the economy and industry prices vary. As an estimate I use x4 net profit. 
+<br><br>
+
+		
+<div class = "strategy">
+
+<strong>STRATEGY 2: Property</strong><br>
+This is the strategy I have chosen for the time being. 
+It is easier to run this strategy if you have solved the relationship problem as two people tend to earn more than one. 
+<br><br>
+1. Attain employment, excess income and save 10%* of the properties value**. <br>
+2. Visit the bank or mortgage broker and tell them you are interested in purchasing a property***. <br> 
+3. Purchase your first property and being building equity****. <br>
+4. Use the equity from the first property to purchase a second, then third property. <br> 
+5. Rent out your two properties while living in the third. Wait 10-20 years for them to increase 2x, or 3x, in value. <br>
+6. Once the properties have significantly increased in value, sell one to pay down your debt. In total the remaining two are likely worth $1,000,000+.  
+
+		
+		<br><br></div>
+	
+	<br><br>
+	
+	
+*This is dependent on the lending laws of your area. <br>
+**Pick a cheap one first, rising property prices make it difficult to save 10% because the goalposts keep moving. <br>
+***If they say no, go to a different bank or mortgage broker. <br>
+****Equity is generated when the property price increases after the time of purchase, and when you pay down your mortgage. <br>
+
+	
+	<br><br>
+
+	
+	
+		<div class = "strategy">
+<strong>STRATEGY 3: Stocks</strong><br>
+Stocks are great for people who are willing to trade volatility in their net worth for flexibility. 
+Stocks can be bought and sold at any time* and tend to trend upwards over time. 
+Index funds are a suitable alternative to stocks for people who want to do minimum research while gaining access to the returns of the stock market. 
+<br><br>
+1. Attain employment and excess income. <br>
+2. Use excess income to purchase stocks or index funds<br>
+3. Reinvest the income generated by your stocks into more stocks. <br>
+4. If you can manage a 8% return, $1,666.66 invested monthly for 20 years compounds into $1,000,000.00<br>
+
+*Provided the market is open
+			
+			<br><br></div>
+	
+	<br><br>
+Stocks are great because of the flexibility they offer. 
+Miss a month of savings?? No worries, it'll just take longer to reach your financial goals. 
+Have some extra income? Great, invest it if you like.  
+<br><br>
+Although, I would warn against trying to time the market in general, there are times when the stock market crashes and everything is cheap. 
+<br><br>
+
+<div class = "strategy">
+<strong>STRATEGY 4: Seller Finance an existing business</strong><br>
+<br><br>
+Seller finance allows you to purchase 100% of a business but only pay 60% of the purchase price upfront. The remaining 40% is paid over the following few years. To do this you are required to provide a deposit of 10% of the purchase price of the business in cash or home equity to the bank for a business loan. 
+<br><br>
+Remember to buy as close to 4x earnings as possible. A business generating $125,000.00 in profit should be worth around $500,000.00. If the business is currently unprofitable, you should probably pass up the deal. If the seller is unwilling to do the deal through seller finance, it may be the case that they don’t think the business will still be generating money in a few years time, in which case you should probably pass up the deal. It may also be the case that the seller is simply being offered a better deal from someone else. 
+<br><br>
+Now the good thing about Seller Finance is that you purchase a business that is already generating a profit but you don’t pay the full price upfront. If the business is worth $500,000.00 and you pay 60% upfront, you’re still left with 200k in cash. This money can be used to improve and update the business. 
+<br><br>
+There are two things to spend this money on, purchasing/leasing equipment and hiring talent. Ideally you’ll purchase a business in which you can operate as an employee, which hasn’t been marketed well. In the age of the internet you should be able to market your business for free, so don’t pay for this, unless you intend to use the hours saved for more profitable activity. 
+<br><br>
+Remember that businesses sell for multiples of earnings. If you increase the earnings of the business from $125,000.00 to $250,000.00 you’ve roughly doubled the value of the business. $500,000.00 to $1,000,000.00. 
+<br><br>
+A word of warning though, when this strategy goes wrong, it goes really wrong. You’ll probably go bankrupt and damage your reputation. So don’t rush into this kind thing.  
+<br><br>
+1. Generate a 10% deposit of the purchase price of a profitable business that operates within the abilities of your skillset.*  <br>
+2. Negotiate to purchase through seller finance. <br>
+3. Market the business, use your remaining money to hire talent and upgrade equipment, work really hard. <br>
+4. Sell the business when you’re ready to do something else. <br>
+
+			
+			<br><br></div>
+
+
+<br><br>
+You may have noticed that these strategies are not exclusive. It is possible to run them all at the same time, however your income, time and energy will be major bottlenecks slowing your progress. It is likely best to run one strategy at a time, until you are confident that your finances are secure and that you have the time and energy required to begin an additional strategy.
+<br><br>
+It is important to be intentional with your finances, because in doing so, you will have the best chance of obtaining the necessary resources to fund the life you want. 
+</p>
+
+	
+</div>
+
+<hr class = "line14">
+
+
+<hr class = "line14">
+</div>
+
+
+
+
+
+
+
+
+
